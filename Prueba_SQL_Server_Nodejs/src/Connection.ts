@@ -14,7 +14,10 @@ const rest = new (require('rest-mssql-nodejs'))({
     } 
 });
 
-
+/*
+    After that, we will export the constant as a module. 
+    This allows that can import the connection to other files.
+*/
 
 module.exports = {
     rest

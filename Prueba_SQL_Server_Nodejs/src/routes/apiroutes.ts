@@ -1,10 +1,5 @@
-  
-
 import { Router } from 'express';
-import { pruebaController } from '../controllers/Prueba';
-import { prueba2Controller } from '../controllers/Prueba2';
-
-
+import { apiController } from '../controllers/apicontrollers';
 
 class apiroutes{
 
@@ -15,9 +10,9 @@ class apiroutes{
     }
 
     config():void{
-      this.router.get('/Prueba/SQL', prueba2Controller.Select_normal);
-      this.router.post('/Prueba/WHERESQL', prueba2Controller.Select_parametros);
-      this.router.post('/Prueba/InsertadoSQL', prueba2Controller.Insertados);
+      this.router.get('/Prueba/SQL', apiController.Select_normal);
+      this.router.post('/Prueba/WHERESQL', apiController.Select_parametros);
+      this.router.post('/Prueba/InsertadoSQL', apiController.Insertados);
     }
 }
 

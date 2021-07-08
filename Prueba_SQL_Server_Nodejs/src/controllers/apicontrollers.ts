@@ -2,7 +2,7 @@ import { Request, Response} from 'express';
 //Conexion a Base de datos
 const { rest } = require('../Keys');
 
-class Prueba2Controller {
+class ApiController {
 
     public async Select_normal(req: Request, res:Response){
              
@@ -42,4 +42,4 @@ class Prueba2Controller {
 
 }
 
-export const prueba2Controller = new Prueba2Controller();
+export const apiController = new ApiController();

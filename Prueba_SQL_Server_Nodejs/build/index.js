@@ -32,6 +32,13 @@ class Server {
     
     It is just a recommendation, you can use the path of the same name for everyone,
     but in the next part you should put something that differentiates your petitions.
+
+    REMEMBER
+    the structure of the route is this
+
+    LOCALHOST := localhost : 'number port' PATH
+    PATH: '/' | '/name of route'
+    
     */
     routes() {
         this.app.use('/api', apiroutes_1.default);

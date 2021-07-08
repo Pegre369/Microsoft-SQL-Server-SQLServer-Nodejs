@@ -9,10 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.prueba2Controller = void 0;
+exports.apiController = void 0;
 //Conexion a Base de datos
 const { rest } = require('../Keys');
-class Prueba2Controller {
+class ApiController {
     Select_normal(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const resul = yield rest.executeQuery('SELECT * FROM Prueba;');
@@ -47,4 +47,4 @@ class Prueba2Controller {
         });
     }
 }
-exports.prueba2Controller = new Prueba2Controller();
+exports.apiController = new ApiController();

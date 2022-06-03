@@ -24,7 +24,7 @@
     "@types/morgan": "^1.9.2",
     "@types/mssql": "^7.1.0",
     "@types/npm": "^2.0.31",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "nodemon": "^2.0.9",
     "rest-mssql-nodejs": "^1.0.10"
   }
